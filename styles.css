@@ -1009,6 +1009,146 @@ figcaption {
   margin: 0.5em 0 1.5em;
 }
 
+.radiant-gallery {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 12px 2.5em;
+  box-sizing: border-box;
+}
+
+.radiant-gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 22px;
+  margin-bottom: 0.5em;
+}
+
+.radiant-card {
+  background: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 12px 14px 14px;
+  box-sizing: border-box;
+}
+
+.radiant-card__title-link {
+  font-size: 1.05em;
+  font-weight: 600;
+  color: #1a3a5c;
+  text-decoration: none;
+}
+
+.radiant-card__title-link:hover {
+  text-decoration: underline;
+}
+
+.radiant-card__desc {
+  font-size: 0.88em;
+  color: #555;
+  margin: 0.45em 0 0.5em;
+  line-height: 1.45;
+}
+
+.radiant-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+  align-items: center;
+  font-size: 0.78em;
+}
+
+.radiant-card__badge {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 3px 7px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.radiant-card__badge--webgl {
+  background: rgba(200, 149, 108, 0.35);
+  color: #3d2918;
+}
+
+.radiant-card__badge--canvas-2d {
+  background: rgba(90, 130, 160, 0.3);
+  color: #1f3550;
+}
+
+.radiant-card__tag {
+  color: #666;
+  padding: 2px 6px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.radiant-card__hint {
+  color: #888;
+  font-style: italic;
+}
+
+.radiant-card__frame {
+  border-radius: 8px;
+  overflow: hidden;
+  background: #111;
+  margin-top: 10px;
+  line-height: 0;
+}
+
+.radiant-card__iframe {
+  display: block;
+  width: 100%;
+  height: 240px;
+  border: 0;
+}
+
+.radiant-gallery__tool-group--schemes {
+  flex: 1 1 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.radiant-gallery__swatches {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.radiant-gallery__swatch {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.radiant-gallery__swatch:hover {
+  border-color: rgba(0, 0, 0, 0.45);
+}
+
+.radiant-gallery__swatch.is-active {
+  border-color: #222;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #222;
+}
+
+.radiant-gallery__swatch-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 .projects {
   margin-left: auto;
   margin-right: auto;

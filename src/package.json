@@ -7,7 +7,8 @@
     "start": "node bin/watch.js",
     "build": "node bin/build.js",
     "build-all": "for dir in src/*; do ./bin/build.js $dir; done",
-    "build-projects-index": "node bin/build-project-index.js > src/sketches/index.json"
+    "build-projects-index": "node bin/build-project-index.js > src/sketches/index.json",
+    "build-radiant-index": "node bin/build-radiant-index.js"
   },
   "repository": {
     "type": "git",

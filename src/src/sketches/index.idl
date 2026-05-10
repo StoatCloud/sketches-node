@@ -18,4 +18,10 @@ Comments? Questions? Let me know [@rreusser@mathstodon.xyz](https://mathstodon.x
 
 [ProjectIndex fullWidth:true/]
 
+## Radiant shader pack (iframe previews)
+
+These are self-contained pages from the [Radiant](https://github.com/pbakaus/radiant) submodule (`radiant/static/*.html`). They load in iframes below — the same **style tags** and **Canvas / WebGL** split as the regl sketches above. **Color** uses CSS `filter` on each preview: pick a global palette (Amber, Mono, Blue, Rose, Emerald, Arctic, matching Radiant’s gallery) or switch to **per-shader default** for entries that define a suggested scheme in Radiant.
+
+[RadiantShaderGallery fullWidth:true/]
+
 [footer fullWidth:true/]
