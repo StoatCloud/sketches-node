@@ -1,6 +1,5 @@
 {
-  "title": "Kelvin Wake Pattern",
-  "description": "Visualizing the velocity-independent wake angle in deep water waves",
-  "order": 3900,
-  "image": "http://rreusser.github.io/src/src/kelvin-wake/thumbnail.jpg"
+  "title": "Stable three-body periodic orbits",
+  "description": "Planar three-body dynamics and periodic orbit families (WebGL)",
+  "order": 610
 }

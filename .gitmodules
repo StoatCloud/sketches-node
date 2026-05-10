@@ -1,0 +1,3 @@
+[submodule "radiant"]
+	path = radiant
+	url = https://github.com/pbakaus/radiant.git
