@@ -1,0 +1,8 @@
+{
+  "name": "sketches-site",
+  "private": true,
+  "description": "Local preview for the static GitHub Pages layout (repo root).",
+  "scripts": {
+    "serve": "npx --yes serve . -l 4173 --no-clipboard"
+  }
+}

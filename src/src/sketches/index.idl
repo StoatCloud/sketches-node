@@ -2,7 +2,7 @@
 
 [meta fullWidth:true
   title:"Sketches"
-  description:"Mathematical sketches in WebGL"
+  description:"Mathematical sketches — canvas and WebGL, with a Radiant-style gallery"
   shareImageUrl:"https://raw.githubusercontent.com/rreusser/rreusser.github.io/5516ed49/sketches/images/thumbnail.jpg"
   twitterHandle:"rickyreusser"
 /]
@@ -12,10 +12,16 @@
   title:"Sketches"
 /]
 
-A set of experiments and explorations, mostly using the [regl](https://github.com/regl-project/regl) WebGL library, some computed on the GPU and some on the CPU. The source for all content and projects on this site can be found [here](https://github.com/rreusser/rreusser.github.io/tree/master/src/src).
+A set of experiments and explorations, mostly using the [regl](https://github.com/regl-project/regl) WebGL library, some computed on the GPU and some on the CPU. Sketches below are grouped for **VM-friendly** viewing versus **GPU-heavy WebGL**; style tags mirror the [Radiant](https://github.com/pbakaus/radiant) gallery vocabulary (submodule at `radiant/`). The source for all content and projects on this site can be found [here](https://github.com/rreusser/rreusser.github.io/tree/master/src/src).
 
 Comments? Questions? Let me know [@rreusser@mathstodon.xyz](https://mathstodon.xyz/@rreusser).
 
 [ProjectIndex fullWidth:true/]
+
+## Radiant shader pack (iframe previews)
+
+These are self-contained pages from the [Radiant](https://github.com/pbakaus/radiant) submodule (`radiant/static/*.html`). They load in iframes below — the same **style tags** and **Canvas / WebGL** split as the regl sketches above. **Color** uses CSS `filter` on each preview: pick a global palette (Amber, Mono, Blue, Rose, Emerald, Arctic, matching Radiant’s gallery) or switch to **per-shader default** for entries that define a suggested scheme in Radiant.
+
+[RadiantShaderGallery fullWidth:true/]
 
 [footer fullWidth:true/]

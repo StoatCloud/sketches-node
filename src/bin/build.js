@@ -18,6 +18,7 @@ const rmrf = require('rimraf');
 const brfs = require('brfs');
 const cpr = require('cpr');
 const fs = require('fs');
+const { execFileSync } = require('child_process');
 
 var projectDir = process.argv[2];
 if (!/^src\//.test(projectDir)) projectDir = path.join('src', projectDir);
@@ -28,6 +29,13 @@ const outputDir = projectDir === 'src/sketches'
   : projectDir.replace(/^src\//, '../');
 
 console.log('Building ', projectDir);
+
+if (projectDir === 'src/sketches') {
+  execFileSync(process.execPath, [path.join(__dirname, 'build-radiant-index.js')], {
+    cwd: path.join(__dirname, '..'),
+    stdio: 'inherit'
+  });
+}
 
 switch (entryFile.type) {
   case 'idl':
